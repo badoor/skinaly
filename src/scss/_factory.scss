@@ -1,0 +1,19 @@
+.factory {
+  &__title {
+    margin-bottom: 100px;
+  }
+  &-block {
+    display: flex;
+    justify-content: center;
+    &__text {
+      flex-basis: 50%;
+      margin-left: 70px;
+      font-size: 1.25rem;
+      @include light;
+      line-height: 1.55;
+      p {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.before {
+  margin-bottom: 100px;
+  &-slider {
+    max-width: 640px;
+    margin: auto;
+    position: relative;
+    &-arrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

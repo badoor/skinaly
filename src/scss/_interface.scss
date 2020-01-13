@@ -1,0 +1,84 @@
+:root {
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  @include light;
+}
+
+.section {
+  padding: 100px 0;
+  &-title {
+    font-size: 1.875rem;
+    @include bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+input {
+  width: 300px;
+  height: 80px;
+  padding: 30px;
+  border: 1px solid #dddddd;
+}
+
+.bg-secondary {
+  background-color: $bg-secondary;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+    min-width: 960px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+    min-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    min-width: 100%;
+    padding: 0 30px;
+  }
+}
+
+.button-o {
+  font-size: 0.75rem;
+  padding: 17px 22px;
+  color: #507fe1;
+  @include bold;
+  border: 2px solid #507fe1;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.button {
+  padding: 25px 45px;
+  font-size: 0.938rem;
+  @include bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  border: none;
+  background-color: $primary;
+}

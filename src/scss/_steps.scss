@@ -1,0 +1,42 @@
+.steps {
+  background-color: $bg-secondary;
+  text-align: center;
+  &-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-title {
+    margin-bottom: 90px;
+  }
+}
+
+.step {
+  position: relative;
+  &__img {
+    margin-bottom: 30px;
+  }
+  &:first-child {
+    &::before {
+      display: none;
+    }
+  }
+  &::before {
+    content: "";
+    width: 85%;
+    height: 2px;
+    background-color: rgba(126, 123, 120, 0.5);
+    position: absolute;
+    display: block;
+    top: 28%;
+    right: 60%;
+  }
+  &__title {
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 0.875rem;
+    width: 190px;
+  }
+}
+

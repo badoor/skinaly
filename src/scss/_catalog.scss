@@ -1,0 +1,75 @@
+.catalog {
+  background-color: $bg-secondary;
+  &__title {
+    margin-bottom: 100px;
+  }
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__card {
+    flex-basis: 50%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-content: center;
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+  }
+
+  &__link {
+    text-align: center;
+    margin: 60px auto;
+  }
+
+  &__link--more {
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  &__description {
+    display: block;
+  }
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: $blue-opacity;
+  color: $white;
+  font-size: 0.75rem;
+  @include bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.fitting-button {
+  padding: 10px;
+  font-size: 0.6875rem;
+  color: $white;
+  background-color: $blue-opacity;
+  border: none;
+  cursor: pointer;
+}
+
+.add-button {
+  padding: 10px;
+  font-size: 0.6875rem;
+  color: $white;
+  background-color: $blue-opacity;
+  border: none;
+  cursor: pointer;
+}
+
+.like {
+  padding: 8px;
+  width: 33px;
+  height: 33px;
+  background-color: $primary;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.contacts {
+  background-color: $bg-secondary;
+  &__title {
+    margin-bottom: 100px;
+  }
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+      text-align: center;
+    }
+  }
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+  }
+}

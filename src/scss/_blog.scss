@@ -1,0 +1,41 @@
+.blog {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    @include bold;
+  }
+
+  &__link--more {
+    color: $primary;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+    &:hover {
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__img {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+}
